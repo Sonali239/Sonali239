@@ -1,0 +1,222 @@
+<html>
+<head>
+	<style>
+		.navbar
+        {
+        	display: flex;
+	        align-items: center;
+	        padding: 20px;
+	        padding-left: 50px;
+	        padding-right: 30px;
+	        padding-top: 50px;
+        }
+        .nav
+        {
+        	flex: 1;
+	        text-align: right;
+        }
+        .ul
+        {
+        	display: inline-block;
+	        list-style: none;
+        }
+        .li 
+        {
+        	display: inline-block;
+	        margin-right: 70px;
+        }
+        .aa
+        {
+        	text-decoration: none;
+	        font-size: 30px;
+	        color: deepskyblue;
+	       font-family: sans-serif;
+
+        }
+        .button
+        {
+        	font-size: 20px;
+	        color: white;
+	        outline: none;
+	        border: none;
+	        background: transparent;
+	        cursor: pointer;
+	        font-family: sans-serif;
+	        color: aqua;
+
+        }
+        #login-form
+        {
+        	display: none;
+        }
+        .form-box
+        {
+        	width:380px;
+	        height: 480px;
+	        position: relative;
+	        margin: 2% auto;
+	        background:rgba(0, 0, 0, 0.3);
+        	padding: 10px;
+	        overflow: hidden;
+        }
+        .a
+        {
+        	text-decoration: none;
+	        color: palevioletred;
+	        font-size: 50px;
+        }
+        .button-box
+        {
+        	width:220px;
+	        margin:35px auto;
+	        position: relative;
+	        box-shadow: 0 0 20px 9px;
+	        border-radius: 30px;
+        }
+        #toggle-btn
+        {
+        	padding: 10px 30px;
+        	cursor:pointer;
+	        background: transparent;
+	        border:0;
+	        outline: none;
+	        position: relative;
+        }
+        #btn
+        {
+        	top:0;
+	        left: 0;
+	        position: absolute;
+	        width: 110px;
+	        height: 100%;
+	        background: #F3C693;
+	        border-radius: 30px;
+	        transition: .5s;
+        }
+        .input-group-login
+        {
+        	top:150px;
+	        position:absolute;
+	        width:280px;
+	        transition: .5s;
+        }
+        .input-field
+        {
+        	width:100%;
+	        padding:10px 0;
+	        margin:5px 0;
+	        border-left:0;
+	        border-top: 0;
+	        border-right: 0;
+	        border-bottom:1px solid #999;
+	        text-decoration-color: deepskyblue;
+	        outline:none;
+	        background:antiquewhite;
+        }
+        .submit_btn
+        {
+        	width:85%;
+        	padding: 10px 30px;
+        	cursor:pointer;
+        	display: block;
+        	margin: auto;
+        	background: #F3C693;
+        	border:0;
+        	outline:none;
+        	border-radius: 30px;	
+        }
+        .check-box
+        {
+        	margin: 30px 10px 34px 0;
+        }
+        .span
+        {
+        	color: #777;
+        	font-size: 12px;
+        	bottom: 68px;
+        }
+        .login
+        {
+        	left: 450px;
+        }	
+        .input
+        {
+        	color: white;
+        	font-size:15px;
+        }
+    </style>
+	<link rel="stylesheet" type="style.css">
+</head>
+
+    <body>
+	    <div style="border:1px solid black; background-color: alpha; background-image: url(img1.png); background-postion: center; background-size: cover;position: absolute;height: 100%; width: 100%;">
+
+		    <div class ="navbar">
+		    	<div class="nav"></div>
+
+		        <div>
+		        	<a class="a"href="new.html">Interior Designer</a>
+	            </div>	
+	            <nav>
+	            	<ul class="ul" id='MenuItems'>
+	            		<li class="li"> <a class="aa" href="Home.html">Home</a></li>
+			            <li class="li"> <a class="aa" href='About.html'>About</a></li>
+			            <li class="li"> <a class="aa" href='Services.html'>Services</a></li>
+			            <li class="li"> <a class="aa" href='Gallery.html'>Gallery</a></li>
+			            <li class="li"> <a class="aa" href='Contactus.html'>Contact us</a></li>
+			            <li class="li"><button class="button" class="login-btn"onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">Login</button>
+			            </li>
+			        </ul>
+	            </nav>
+	        </div>
+	        <div id='login-form' class='login-page'>
+	        	<div class="form-box">
+	        		<div class="button-box">
+	        			<div class="login-form"></div>
+	        			<div id="btn"></div>
+			            <button
+			            type='button'onclick='Login()'id='toggle-btn'>Get In Touch</button>
+			        </div>    
+			            <form id='login' class='input-group-login'>
+		            	    <input type='text'class='input-field'placeholder='First Name'requried>
+		            	    <input type='text'class='input-field'placeholder='Last Name'requried>
+		            	    <input type='text'class='input-field'placeholder='Email Id'requried>
+		            	    <input type='password'class='input-field'placeholder='Enter Password' required>
+		            	    <input type="checkbox"class="check-box" class="login"><span>Remember Password</span>
+			                <button type="submit"class='submit-btn' class="login">Log in</button>
+			            </form>   
+                            
+		         </div>	
+	            </div>
+	        </div>    
+	    </div>
+       <script>
+       	  var x=document.getElementById('Login');
+       	  var y=document.getElementById('btn');
+       	  function Login()
+       	  {
+       	  	x.style.left='50px';
+       	  	y.style.left='450px';
+       	  	z.style.left='0px';
+       	  }
+       </script>
+       <script>
+       	   var modal = document.getElementById('login-form');
+       	   window.onclick = function(event)
+       	   {
+       	   	   if (event.target == modal)
+       	   	    {
+                   modal.style.display = "none";
+       	   	    }
+       	    }
+       </script>
+      </div>
+        <table>
+            <tr>
+            	
+            </tr>
+        </table>
+    
+
+    </body>
+</html>
