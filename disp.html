@@ -1,0 +1,40 @@
+<html>
+	<body>
+		<center>
+				<form action="disp.php"method="post">
+					<table bgcolor="black">
+							<tr><h1><font size="30"face="Algerian"color="red"><b><u>LOGIN HERE</u></b></font></h1></tr>
+							<tr>
+								<td><font size="20"color="white">Name*</td></font>
+								<td><input type="text" name="nm"placeholder="New User"></td>
+							</tr>
+							<tr>
+								<td><font size="20"color="white">Contact*</font></td>
+								<td><input type="number"name="n"></td>
+							</tr>
+							<tr>
+								<td><font size="20"color="white">Email*</font></td>
+								<td><input type="text" name="e"></td>
+							</tr>
+							<tr>
+								<td><font size="20"color="white">Password*</font></td>
+								<td><input type="number" name="n"></td>
+							</tr>
+							<tr>
+								<td><input type="submit"value="login"></td>
+							</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<?php
+					while($row=mysqli_fetch_assoc($result)){
+					?>
+					<?php
+					}
+				?>
+		</table>
+	</form>
+</center>
+</body>
+</html>

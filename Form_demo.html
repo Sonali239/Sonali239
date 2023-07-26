@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>FORM</title>
+	<style>
+		.formstyle  
+		{  
+  			width: 300px;  
+   			height: 530px;  
+   			margin: auto;  
+    		border: 3px solid skyblue;  
+    		border-radius: 5px;  
+    		padding: 20px;  
+		}  
+	</style>
+</head>
+<body>
+	<form action="Login_form.php"method="post">
+		<center>
+			<table  class="formstyle">
+				<h1><u>LOGIN FORM</u></h1><br>
+				<tr>
+					<td>NAME:</td>
+					<td><input type="text"name="username"placeholder="Enter Your Fullname"></td>
+				</tr>
+					<tr>
+						<td>BATCH-ID:</td>
+						<td><input type="text" name="BATCH-ID"></td>
+					</tr>
+					<tr>
+						<td>COURSE</td>
+						<td><select>
+							<option>BCA</option>
+							<option>BBA</option>
+							<option>BSC-IT</option>
+							<option>PGDM</option>
+						</select></td></tr>
+						<tr>
+							<td>GENDER:</td>
+							<td><input type="radio" name="Gender">Male<input type="radio" name="Gender">Female</td>
+						</tr>
+						<tr>
+							<td>HOBBIES:</td>
+							<td><input type="checkbox" name="hobbies">Music<input type="checkbox" name="hobbies">Playgame<input type="checkbox" name="hobbies">Cooking<input type="checkbox" name="hobbies">Art&Craft</td>
+						</tr>
+						<tr>
+							<td>D.O.B</td>
+							<td><input type="date" name="d.o.b"></td>
+						</tr>
+						<tr>
+							<td>AnyQuery:</td>
+							<td><textarea></textarea></td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="text" name="Email"placeholder="Enter Valid Email Name"></td>
+						</tr>
+						<tr><td>Password:</td>
+						<td><input type="password" name="password" ></td>
+						</tr>
+						<tr>
+							<td><input type="submit" value="login"></td>
+						</tr>
+				</table>
+			</center>
+		</form>
+	</body>
+</html>
+

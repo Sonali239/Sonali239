@@ -1,0 +1,59 @@
+<htmL>
+<head>
+	<title>Card</title>
+	<style>
+		.form 
+		{  
+  			width: 330px;  
+   			height: 650px;  
+   			margin: auto;  
+    		border: 3px solid skyblue;  
+    		border-radius: 5px;  
+    		padding: 20px; 
+    		background-color: lightyellow; 
+		}  
+	</style>
+</head>
+<body>
+	<form action=sp.php method="post">
+		<center>
+			<h1><b><u>Registration Form</u></b></h1>
+			<table class="form">
+				<tr>
+					<td><font COLOR="black"><b> NAME:</b></font></td>
+					<td><input type="text" name="nm" placeholder="First and last name"></td>
+				</tr>
+				<tr>
+					<td><b><font COLOR="black"><b> Email:</b></font></td>
+					<td><input type="text" name="em" placeholder="example@domain.com"></td>
+				</tr>
+				<tr>
+					<td><font COLOR="black"><b>Phone:</b></font></td>
+					<td><input type="number" name="n"placeholder="Eg.+4475000000"></td>
+				</tr>
+				<tr>
+					<td><font COLOR="black"><b> Address:</b></font></td>
+					<td><textarea></textarea></td>
+				</tr>
+				<tr>
+					<td><font COLOR="black"><b> Post code:</b></font></td>
+					<td><input type="number" name="co"></td>
+				</tr>
+				<tr>
+					<td><font COLOR="black"><b>Country:</b></font></td>
+					<td><input type="text" name="i"></td>
+				</tr>
+				
+				<tr>
+					<td><font COLOR="black"><b>Gender:</b></font>
+				 	<td><input type="radio" value="M" name="gender">Male
+				 	<input type="radio" value="F"name="gender">Female</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="login"></td>
+				</tr>
+			</table>
+		</center>
+	</form>
+</body>
+</htmL>
